@@ -1,0 +1,388 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for data/data.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">data</a> data.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>8/8</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>8/8</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Datos iniciales ("semillas") de GasPro. Se copian a localStorage la primera vez.
+&nbsp;
+export const productosSeed = [
+  { codigo: 'CL001', categoria: 'Cilindros de Gas', nombre: 'Cilindro GLP 5 kg', descripcion: 'Cilindro de gas licuado de petróleo 5 kg. Para uso residencial (cocina, calefacción pequeña).', unidad: 'Unidad', precioResidencial: 6500, precioComercial: 6000, stock: 80, stockCritico: 10, descuento: 0 },
+  { codigo: 'CL002', categoria: 'Cilindros de Gas', nombre: 'Cilindro GLP 11 kg', descripcion: 'Cilindro estándar doméstico. El más utilizado en hogares chilenos. Compatible con reguladores estándar.', unidad: 'Unidad', precioResidencial: 12000, precioComercial: 11000, stock: 200, stockCritico: 20, descuento: 10 },
+  { codigo: 'CL003', categoria: 'Cilindros de Gas', nombre: 'Cilindro GLP 15 kg', descripcion: 'Cilindro de mayor capacidad para hogares de alto consumo o locales pequeños.', unidad: 'Unidad', precioResidencial: 16000, precioComercial: 14500, stock: 90, stockCritico: 15, descuento: 0 },
+  { codigo: 'CL004', categoria: 'Cilindros de Gas', nombre: 'Cilindro GLP 45 kg', descripcion: 'Cilindro industrial. Uso comercial: restaurantes, talleres, calefacción de locales.', unidad: 'Unidad', precioResidencial: 45000, precioComercial: 40000, stock: 30, stockCritico: 5, descuento: 0 },
+  { codigo: 'RG001', categoria: 'Reguladores', nombre: 'Regulador doméstico estándar', descripcion: 'Regulador de 1 etapa para cilindros 5, 11 y 15 kg. Presión de salida 28 mbar.', unidad: 'Unidad', precioResidencial: 8990, precioComercial: 8200, stock: 45, stockCritico: 8, descuento: 15 },
+  { codigo: 'RG002', categoria: 'Reguladores', nombre: 'Regulador de alta presión', descripcion: 'Regulador para cocinas industriales o equipos de mayor consumo. Presión regulable.', unidad: 'Unidad', precioResidencial: 18990, precioComercial: 17000, stock: 12, stockCritico: 5, descuento: 0 },
+  { codigo: 'RG003', categoria: 'Reguladores', nombre: 'Regulador dual (2 salidas)', descripcion: 'Permite conectar dos artefactos simultáneamente al mismo cilindro.', unidad: 'Unidad', precioResidencial: 14990, precioComercial: 13500, stock: 18, stockCritico: 5, descuento: 0 },
+  { codigo: 'MG001', categoria: 'Mangueras y Conexiones', nombre: 'Manguera gas 1.5 m', descripcion: 'Manguera flexible homologada. Diámetro interior 9mm. Compatible con reguladores estándar.', unidad: 'Unidad', precioResidencial: 3990, precioComercial: 3500, stock: 80, stockCritico: 10, descuento: 0 },
+  { codigo: 'MG002', categoria: 'Mangueras y Conexiones', nombre: 'Manguera gas 3 m', descripcion: 'Manguera larga para instalaciones donde el artefacto está alejado del cilindro.', unidad: 'Unidad', precioResidencial: 6990, precioComercial: 6200, stock: 50, stockCritico: 10, descuento: 0 },
+  { codigo: 'MG003', categoria: 'Mangueras y Conexiones', nombre: 'Abrazadera metálica', descripcion: 'Abrazadera de acero para asegurar la conexión manguera-regulador y manguera-artefacto.', unidad: 'Unidad', precioResidencial: 990, precioComercial: 800, stock: 200, stockCritico: 30, descuento: 0 },
+  { codigo: 'MG004', categoria: 'Mangueras y Conexiones', nombre: 'Kit conexión completo', descripcion: 'Todo lo necesario para instalar un cilindro nuevo (regulador + manguera 1.5m + abrazaderas).', unidad: 'Kit', precioResidencial: 12990, precioComercial: 11500, stock: 25, stockCritico: 5, descuento: 20 },
+  { codigo: 'AC001', categoria: 'Accesorios', nombre: 'Carro porta cilindro 11/15 kg', descripcion: 'Carro metálico con ruedas para transportar cilindros dentro del hogar con seguridad.', unidad: 'Unidad', precioResidencial: 12990, precioComercial: 11000, stock: 20, stockCritico: 5, descuento: 0 },
+  { codigo: 'AC002', categoria: 'Accesorios', nombre: 'Tapa protectora para válvula', descripcion: 'Tapa de plástico ABS para proteger la válvula del cilindro durante el transporte.', unidad: 'Unidad', precioResidencial: 1490, precioComercial: 1200, stock: 60, stockCritico: 10, descuento: 0 },
+  { codigo: 'AC003', categoria: 'Accesorios', nombre: 'Detector de gas a batería', descripcion: 'Sensor electroquímico. Alarma sonora y visual ante fuga de gas GLP o metano.', unidad: 'Unidad', precioResidencial: 19990, precioComercial: 17000, stock: 8, stockCritico: 3, descuento: 10 },
+];
+&nbsp;
+export const categoriasSeed = [
+  { id: 'cilindros', nombre: 'Cilindros de Gas', descripcion: 'Cilindros GLP de 5, 11, 15 y 45 kg.', icono: '🛢️' },
+  { id: 'reguladores', nombre: 'Reguladores', descripcion: 'Reguladores domésticos, de alta presión y duales.', icono: '🎛️' },
+  { id: 'mangueras', nombre: 'Mangueras y Conexiones', descripcion: 'Mangueras, abrazaderas y kits de conexión.', icono: '🔗' },
+  { id: 'accesorios', nombre: 'Accesorios', descripcion: 'Carros, tapas protectoras y detectores de gas.', icono: '🧰' },
+];
+&nbsp;
+export const zonas = [
+  { zona: 'Zona Centro', comunas: 'Chillán (sectores centro, norte y sur)', dias: 'Lunes a Sábado', horario: '08:00 – 20:00', tiempo: '1 – 3 horas' },
+  { zona: 'Zona Oriente', comunas: 'Chillán (sector oriente), Chillán Viejo', dias: 'Lunes a Viernes', horario: '08:00 – 18:00', tiempo: '2 – 4 horas' },
+  { zona: 'Zona Rural', comunas: 'El Carmen, Pinto, San Ignacio', dias: 'Martes y Jueves', horario: '08:00 – 16:00', tiempo: '3 – 6 horas' },
+  { zona: 'Zona Sur', comunas: 'Bulnes, Quillón', dias: 'Miércoles', horario: '08:00 – 16:00', tiempo: '4 – 6 horas' },
+  { zona: 'Zona Comercial', comunas: 'Parques industriales y locales comerciales', dias: 'Lunes a Viernes', horario: '07:00 – 17:00', tiempo: 'Según agenda' },
+];
+&nbsp;
+export const regiones = {
+  'Región de Ñuble': ['Chillán', 'Chillán Viejo', 'San Carlos', 'Bulnes', 'El Carmen', 'Pinto', 'San Ignacio', 'Quillón'],
+  'Región Metropolitana de Santiago': ['Santiago', 'Providencia', 'Las Condes', 'Maipú'],
+  'Región del Biobío': ['Concepción', 'Talcahuano', 'Los Ángeles'],
+};
+&nbsp;
+// Credenciales de prueba:
+//   Administrador -&gt; marcela.fuentes@gmail.com / admin123
+//   Vendedor      -&gt; pedro.salazar@duoc.cl     / vendedor1
+//   Cliente       -&gt; fer.nunez@gmail.com       / cliente1
+export const usuariosDemo = [
+  { run: '191234561', nombre: 'Marcela', apellidos: 'Fuentes Rojas', correo: 'marcela.fuentes@gmail.com', clave: 'admin123', tipo: 'Administrador', region: 'Región de Ñuble', comuna: 'Chillán', direccion: 'Av. Libertad 450' },
+  { run: '182345679', nombre: 'Pedro', apellidos: 'Salazar Ibáñez', correo: 'pedro.salazar@duoc.cl', clave: 'vendedor1', tipo: 'Vendedor', region: 'Región de Ñuble', comuna: 'Chillán Viejo', direccion: 'Los Aromos 120' },
+  { run: '201122333', nombre: 'Fernanda', apellidos: 'Núñez Soto', correo: 'fer.nunez@gmail.com', clave: 'cliente1', tipo: 'Cliente', region: 'Región de Ñuble', comuna: 'Bulnes', direccion: 'Camino Real 890' },
+];
+&nbsp;
+export const imagenesProductos = {
+  CL001: 'CL001.jpg', CL002: 'CL002.jpg', CL003: 'CL003.jpg', CL004: 'CL004.jpg',
+  RG001: 'RG001.jpg', RG002: 'RG002.jpeg', RG003: 'RG003.webp',
+  MG001: 'MG001.webp', MG002: 'MG002.webp', MG003: 'MG003.webp', MG004: 'MG004.webp',
+  AC001: 'AC001.jpg', AC002: 'AC002.jpg', AC003: 'AC003.jpg',
+};
+&nbsp;
+export const blogsSeed = [
+  {
+    id: 1,
+    icono: '🛡️',
+    titulo: 'Cómo detectar una fuga de gas a tiempo',
+    resumen: 'Señales, olores y sonidos que indican una posible fuga en tu instalación doméstica.',
+    contenido: [
+      'Una fuga de gas puede ser peligrosa, pero suele dar señales claras si sabes reconocerlas a tiempo. El olor característico a "huevo podrido" que se añade artificialmente al GLP es la primera pista: si lo percibes cerca de tu cilindro o artefactos, cierra la llave de paso de inmediato.',
+      'Otras señales incluyen un silbido leve cerca de conexiones o mangueras, plantas marchitas cerca de cañerías subterráneas, y burbujas al aplicar agua jabonosa sobre las uniones. Revisa periódicamente el estado de mangueras y abrazaderas, ya que el desgaste es la causa más común de fugas menores.',
+      'Recomendamos instalar un detector de gas a batería en la cocina, cerca del suelo (el GLP es más pesado que el aire), y realizar mantenciones preventivas cada 12 meses. Ante cualquier sospecha, no enciendas interruptores eléctricos, ventila el espacio y contacta a nuestro equipo técnico.',
+    ],
+  },
+  {
+    id: 2,
+    icono: '🔧',
+    titulo: '¿Cada cuánto debo cambiar el regulador de mi cilindro?',
+    resumen: 'La vida útil de un regulador y las señales de que ya debes reemplazarlo.',
+    contenido: [
+      'El regulador es la pieza que controla la presión del gas entre el cilindro y tus artefactos, y su buen estado es clave para un funcionamiento seguro. La recomendación general es reemplazarlo cada 5 años, aunque factores como la exposición al sol, la humedad y el uso frecuente pueden acortar su vida útil.',
+      'Algunas señales de que necesitas cambiarlo pronto: la llama de tus artefactos se ve inestable o amarillenta, sientes olor a gas al conectar o desconectar el regulador, o la goma de sellado se ve agrietada o reseca.',
+      'En GasPro contamos con reguladores estándar, de alta presión y duales, disponibles para retiro o despacho a domicilio. Si tienes dudas sobre cuál modelo usar según tu artefacto, contacta a nuestro equipo de reparto para que te asesore.',
+    ],
+  },
+];
+&nbsp;
+export const ordenesSeed = [
+  {
+    id: 20260001, codigoOrden: 'ORDER20260001', fecha: '2026-09-28T15:20:00.000Z', usuarioRun: '201122333',
+    cliente: { nombre: 'Fernanda', apellidos: 'Núñez Soto', correo: 'fer.nunez@gmail.com' },
+    direccion: { calle: 'Camino Real 890', departamento: '', region: 'Región de Ñuble', comuna: 'Bulnes', indicaciones: 'Dejar con el conserje' },
+    entrega: 'Despacho a domicilio', metodoPago: 'tarjeta', estado: 'Pagada', total: 22432,
+    items: [
+      { codigo: 'CL002', nombre: 'Cilindro GLP 11 kg', precio: 10800, cantidad: 1 },
+      { codigo: 'RG001', nombre: 'Regulador doméstico estándar', precio: 7642, cantidad: 1 },
+      { codigo: 'MG001', nombre: 'Manguera gas 1.5 m', precio: 3990, cantidad: 1 },
+    ],
+  },
+  {
+    id: 20260002, codigoOrden: 'ORDER20260002', fecha: '2026-10-03T11:05:00.000Z', usuarioRun: null,
+    cliente: { nombre: 'Luis', apellidos: 'Pérez Mora', correo: 'luis.perez@gmail.com' },
+    direccion: { calle: 'Los Aromos 55', departamento: '', region: 'Región de Ñuble', comuna: 'Chillán', indicaciones: '' },
+    entrega: 'Despacho a domicilio', metodoPago: 'tarjeta', estado: 'Pagada', total: 45000,
+    items: [{ codigo: 'CL004', nombre: 'Cilindro GLP 45 kg', precio: 45000, cantidad: 1 }],
+  },
+];</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-10-17T21:37:52.790Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
